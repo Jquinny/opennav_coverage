@@ -15,8 +15,11 @@ libortools = { version = "9.15.*", channel = "main" }
 fields2cover = "==2.0.1"
 libboost-devel = "1.90.*"
 
+[workspace.build-variants]
+ros2-distro-mutex = ["0.16.*"]
+
 [dependencies]
-ros2-distro-mutex = "0.20.*"
+ros2-distro-mutex = "0.16.*"
 ros-jazzy-opennav-coverage = { path = "opennav_coverage" }
 ros-jazzy-opennav-coverage-msgs = { path = "opennav_coverage_msgs" }
 ros-jazzy-opennav-coverage-bt = { path = "opennav_coverage_bt" }
