@@ -1,0 +1,20 @@
+[package]
+publish = true
+
+[package.build]
+backend = { name = "pixi-build-ros", version = "*" }
+
+[package.build.config]
+extra-package-mappings = [
+    {"fields2cover" = { conda = ["fields2cover"] }}
+]
+
+[package.build-dependencies]
+fields2cover = { workspace = true }
+libboost-devel = { workspace = true }
+libortools = { workspace = true }
+
+[package.host-dependencies]
+fields2cover = { workspace = true }
+libboost-devel = { workspace = true }
+libortools = { workspace = true }
